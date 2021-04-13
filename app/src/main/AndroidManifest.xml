@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.healthmeter.coronameter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".javaop.MyAppContext"
+        android:configChanges="locale"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4857677240863208~1521758943" />
+
+        <activity
+            android:name=".SettingsActivityMy"
+            android:configChanges="locale"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".ReferencesActivity" />
+        <activity android:name=".SingleCountryActivity" />
+        <activity android:name=".tableview.tableviewage.AgeGenderActivity" />
+        <activity
+            android:name=".WorldMapWHOActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WorldMapJHUActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".tableview.tableviewcountries.CountriesTableActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

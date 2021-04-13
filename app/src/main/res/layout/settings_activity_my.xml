@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/settings_linearLayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/main_page_unit_back"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textViewChooseCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/defaultCountry"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/totalcase_name_sp"
+            android:textStyle="bold|italic" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerSmartSettingsCountry"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/textViewChooseCountry"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/main_page_icon_background"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_hint="@string/settingHintCountry"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_isReSelectable="true"
+            app:smsp_isSearchable="true"
+            app:smsp_itemColor="@color/main_page_white"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="@color/main_page_back"
+            app:smsp_itemSize="@dimen/totalcase_name_sp"
+            app:smsp_searchHeaderBackgroundColor="@color/country_name"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+
+        <TextView
+            android:id="@+id/textViewChooseLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerSmartSettingsCountry"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/defaultLanguage"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/totalcase_name_sp"
+            android:textStyle="bold|italic" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerSmartSettingsLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewChooseLanguage"
+            android:textAlignment="center"
+            android:background="@drawable/main_page_icon_background"
+            android:layout_margin="10dp"
+            app:smsp_hint="@string/settingHintLanguage"
+            app:smsp_enableErrorLabel="false"
+            app:smsp_enableFloatingLabel="false"
+            app:smsp_isReSelectable="true"
+            app:smsp_isSearchable="true"
+            app:smsp_itemColor="@color/main_page_white"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="@color/main_page_back"
+            app:smsp_itemSize="@dimen/totalcase_name_sp"
+            app:smsp_searchHeaderBackgroundColor="@color/country_name"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+        <TextView
+            android:id="@+id/textViewContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerSmartSettingsLanguage"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/ContactUs"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/totalcase_name_sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnContactUs"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/textViewContactUs"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_shape2"
+            android:elevation="5dp"
+            android:text="@string/btnContactUs"
+            android:textAllCaps="false"
+            android:textSize="@dimen/main_page_button_sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

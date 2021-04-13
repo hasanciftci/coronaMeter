@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleCountryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/single_main_Relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/singleTOPTOP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/main_page_unit_back"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                        android:id="@+id/spinnerSmartSingleCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        ads:smsp_enableErrorLabel="false"
+                        ads:smsp_enableFloatingLabel="false"
+                        ads:smsp_isReSelectable="true"
+                        ads:smsp_isSearchable="true"
+                        ads:smsp_itemColor="@color/main_page_white"
+                        ads:smsp_itemListColor="#7C4DFF"
+                        ads:smsp_itemListHintBackgroundColor="@color/main_page_back"
+                        ads:smsp_itemSize="@dimen/totalcase_name_sp"
+                        ads:smsp_searchHeaderBackgroundColor="@color/country_name"
+                        ads:smsp_selectedItemListColor="#FF5252" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/country_linearLayout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/yarim_mavi_left"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewtotalCase1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingBottom="5dp"
+                                android:text="@string/tableview_country_total_case"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_name_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewtotalCase1"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textViewtotalCase"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline"
+                                android:gravity="center_horizontal"
+                                android:text="148,885"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yarim_mavi_right"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewNewCase1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingBottom="5dp"
+                                android:text="@string/new_cases"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_name_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewNewCase1"
+                                android:background="@android:color/white" />
+
+
+                            <TextView
+                                android:id="@+id/textViewNewCase"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline2"
+                                android:gravity="center_horizontal"
+                                android:text="+3879"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/country_linearLayout2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/yarim_kavun_left"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewTotalDeath1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingBottom="5dp"
+                                android:text="@string/total_death"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_name_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewTotalDeath1"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textViewTotalDeath"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline3"
+                                android:gravity="center_horizontal"
+                                android:text="5823"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout32"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yarim_kavun_right"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewNewDeath1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingBottom="5dp"
+                                android:text="@string/new_death"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_name_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline4"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewNewDeath1"
+                                android:background="@android:color/white" />
+
+
+                            <TextView
+                                android:id="@+id/textViewNewDeath"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline4"
+                                android:gravity="center_horizontal"
+                                android:text="+387"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/country_linearLayout3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout41"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/tum_yesil"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewTotalRecovered1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingBottom="5dp"
+                                android:text="@string/total_recovered"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_name_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline5"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewTotalRecovered1"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textViewTotalRecovered"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline5"
+                                android:gravity="center_horizontal"
+                                android:text="100254"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/country_linearLayout4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout51"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/yarim_mavi_left"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewActiveCases1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingBottom="5dp"
+                                android:text="@string/active_cases"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_name_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline7"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewActiveCases1"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textViewActiveCases"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline7"
+                                android:gravity="center_horizontal"
+                                android:text="65895"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout52"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yarim_kavun_right"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewSerious1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingBottom="5dp"
+                                android:text="@string/serious_cases"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_name_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline8"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewSerious1"
+                                android:background="@android:color/white" />
+
+
+                            <TextView
+                                android:id="@+id/textViewSerious"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline8"
+                                android:gravity="center_horizontal"
+                                android:text="387"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/country_linearLayout5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout61"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/yarim_mavi_left"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewTotalCase1MPop1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/topcase_1mpop"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totcase_1m_pop_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline9"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewTotalCase1MPop1"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textViewTotalCase1MPop"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline9"
+                                android:gravity="center_horizontal"
+                                android:text="5823"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout62"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yarim_mavi_right"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewTopDeath1MPop1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/topdeaths_1mpop"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totcase_1m_pop_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline10"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewTopDeath1MPop1"
+                                android:background="@android:color/white" />
+
+
+                            <TextView
+                                android:id="@+id/textViewTopDeath1MPop"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline10"
+                                android:gravity="center_horizontal"
+                                android:text="2"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/country_linearLayout6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout71"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/yarim_mavi_left"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewTotalTest1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/toptests"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totcase_1m_pop_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline11"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewTotalTest1"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textViewTotalTest"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline11"
+                                android:gravity="center_horizontal"
+                                android:text="25645"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/country_linearLayout72"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yarim_mavi_right"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewTotalTest1mpop1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/toptest_1mpop"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totcase_1m_pop_sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/lineline12"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/textViewTotalTest1mpop1"
+                                android:background="@android:color/white" />
+
+
+                            <TextView
+                                android:id="@+id/textViewTotalTest1mpop"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/lineline12"
+                                android:gravity="center_horizontal"
+                                android:text="3"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/totalcase_num_sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/country_linearLayout7"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageViewSwipe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ads:srcCompat="@drawable/swipe" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/country_linearLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/country_linearLayout8"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/ad_unit_id_banner_test"/>
+</RelativeLayout>

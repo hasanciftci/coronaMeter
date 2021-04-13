@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#15a4fa</color>
+    <color name="colorPrimaryDark">#15a4fa</color>
+    <color name="colorAccent">#15a4fa</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <!-- Multi-sim sim colors -->
+    <color name="Teal_700">#ff00796b</color>
+    <color name="Teal_800">#ff00695c</color>
+    <color name="Blue_700">#ff3367d6</color>
+    <color name="Blue_800">#ff2a56c6</color>
+    <color name="Indigo_700">#ff303f9f</color>
+    <color name="Indigo_800">#ff283593</color>
+    <color name="Purple_700">#ff7b1fa2</color>
+    <color name="Purple_800">#ff6a1b9a</color>
+    <color name="Pink_700">#ffc2185b</color>
+    <color name="Pink_800">#ffad1457</color>
+    <color name="Red_700">#ffc53929</color>
+    <color name="Red_800">#ffb93221</color>
+
+
+    <color name="totalcase_name">#FF821B</color>
+    <color name="totalcase_num">#FF7400</color>
+    <color name="country_name">#FF9E4E</color>
+    <color name="main_page_back">#FDC291</color>
+    <color name="main_page_white">#FFFFFF</color>
+
+    <color name="selected_background_color">#98CEFC</color>
+    <color name="unselected_background_color">#15a4fa</color>
+    <color name="shadow_background_color">#0E54A8</color>
+    <color name="unselected_header_background_color">#197AE7</color>
+
+    <color name="unselected_text_color">#ffffff</color>
+    <color name="selected_text_color">#000000</color>
+    <color name="separator_color">#273e5b</color>
+
+    <color name="popup_menu_item_text_color">#88a5c9</color>
+
+    <color name="female_icon_color">#e9515f</color>
+    <color name="male_icon_color">#f28944</color>
+
+    <color name="cyan_turkuaz">#46D0A7</color>
+
+    <color name="lush_lava">#FF4500</color>
+    <color name="aqua_menthe">#7FFFD4</color>
+    <color name="turkcell_yellow">#FDCE92</color>
+    <color name="turkcell_yellow_dark">#DF9A3D</color>
+    <color name="white_yellowed">#FFD8A5</color>
+    <color name="white_yellowed_dark">#FFEBCF</color>
+
+    <color name="green1">#00C853</color>
+    <color name="green2">#64DD17</color>
+
+    <color name="red1">#EED10909</color>
+    <color name="red2">#F40E1D</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

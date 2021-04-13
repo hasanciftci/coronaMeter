@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tableview.tableviewage.AgeGenderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/ageGenderRelativeTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/main_page_unit_back"
+                android:elevation="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:text="@string/tableview_age_title"
+                    android:textColor="@color/main_page_white"
+                    android:textSize="20sp" />
+
+
+                <com.evrencoskun.tableview.TableView
+                    android:id="@+id/my_TableViewAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ageTitle"
+                    android:layout_gravity="center"
+                    ads:column_header_height="@dimen/table_view_cell_height"
+                    ads:row_header_width="@dimen/table_view_row_header_width"
+                    ads:selected_color="@color/selected_background_color"
+                    ads:separator_color="@color/separator_color"
+                    ads:shadow_color="@color/shadow_background_color"
+                    ads:unselected_color="@color/unselected_background_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_TableViewAge"
+                    android:layout_marginBottom="10dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ageGenderRelativeBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ageGenderRelativeTop"
+                android:layout_margin="20dp"
+                android:background="@drawable/main_page_unit_back"
+                android:elevation="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/genderTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:text="@string/tableview_gender_title"
+                    android:textColor="@color/main_page_white"
+                    android:textSize="20sp" />
+
+
+                <com.evrencoskun.tableview.TableView
+                    android:id="@+id/my_TableViewGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/genderTitle"
+                    android:layout_gravity="center"
+                    ads:column_header_height="@dimen/table_view_cell_height"
+                    ads:row_header_width="@dimen/table_view_row_header_width"
+                    ads:selected_color="@color/selected_background_color"
+                    ads:separator_color="@color/separator_color"
+                    ads:shadow_color="@color/shadow_background_color"
+                    ads:unselected_color="@color/unselected_background_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_TableViewGender"
+                    android:layout_marginBottom="10dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ageGenderRelativeBottom"
+                android:layout_margin="20dp"
+                android:paddingBottom="40dp"
+                android:background="@drawable/main_page_unit_back"
+                android:elevation="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/preConTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:text="@string/tableview_precon_title"
+                    android:textColor="@color/main_page_white"
+                    android:textSize="20sp" />
+
+                <com.evrencoskun.tableview.TableView
+                    android:id="@+id/my_TableViewPreCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/preConTitle"
+                    android:layout_gravity="center"
+                    ads:column_header_height="@dimen/table_view_cell_height"
+                    ads:row_header_width="@dimen/table_view_row_header_width"
+                    ads:selected_color="@color/selected_background_color"
+                    ads:separator_color="@color/separator_color"
+                    ads:shadow_color="@color/shadow_background_color"
+                    ads:unselected_color="@color/unselected_background_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_TableViewPreCon"
+                    android:layout_marginBottom="10dp"
+                    android:text="" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBarAge"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/ad_unit_id_banner_test" />
+</RelativeLayout>

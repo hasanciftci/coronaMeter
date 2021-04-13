@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">CoronaMeter (Covid-19)</string>
+    <string name="action_settings">Settings</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="deaths">Deaths</string>
+    <string name="recovered">Recovered</string>
+    <string name="loading">Loading</string>
+    <string name="new_cases">New Cases</string>
+    <string name="total_death">Total Deaths</string>
+    <string name="new_death">New Deaths</string>
+    <string name="total_recovered">Total Recovered</string>
+    <string name="active_cases">Active Cases</string>
+    <string name="serious_cases">Serious Cases</string>
+    <string name="topcase_1mpop">Tot.Cases/\n1M Pop.</string>
+    <string name="topdeaths_1mpop">Tot.Deaths/\n1M Pop.</string>
+    <string name="toptests">"Total Tests\n "</string>
+    <string name="toptest_1mpop">Tot.Tests/\n1M Pop.</string>
+    <string name="settingHintCountry">Choose Country</string>
+    <string name="settingHintLanguage">Choose Language</string>
+    <string name="defaultLanguage">Default Language</string>
+    <string name="main_page_button_name">View</string>
+    <string name="no_network_connection">No network connection!</string>
+    <string name="main_page_settings_button">Settings</string>
+    <string name="main_page_references_button">References</string>
+    <string name="sort_ascending">Sort Ascending</string>
+    <string name="sort_descending">Sort Descending</string>
+    <string name="clear_sorting">Clear</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="data_not_ready_yet">Data not ready yet!</string>
+    <string name="ContactUs">For error reporting and translation issues, please contact us.</string>
+    <string name="btnContactUs">Contact Us</string>
+
+
+
+    <!--MainActivityButtons-->
+    <string name="View_details_about_your_country">View details about your country</string>
+    <string name="COUNTRY_DETAIL_TABLE">COUNTRY DETAIL TABLE</string>
+    <string name="View_details_about_the_whole_world">View details about the whole world</string>
+    <string name="ALL_COUNTRIES_TABLE">ALL COUNTRIES TABLE</string>
+    <string name="A_closer_look_at_the_deaths">A closer look at the deaths</string>
+    <string name="AGE_GENDER_AND_PRE_EXISTING_CONDITION_STATS">AGE, GENDER AND\nPRE-EXISTING CONDITION STATS</string>
+    <string name="Lets_look_at_the_virus_on_the_map">Let\'s look at the virus on the map</string>
+    <string name="WORLD_VIRUS_MAP_by_WHO">WORLD VIRUS MAP ,by WHO</string>
+    <string name="Another_map_about_Pandemic">Another map about pandemic</string>
+    <string name="WORLD_VIRUS_MAP_by_JHU">WORLD VIRUS MAP ,by JHU</string>
+
+    <string name="references_activity_title">References:</string>
+
+
+    <!--tableview age-->
+    <string name="tableview_age_age">AGE</string>
+    <string name="tableview_age_death_rate_CC">DEATH RATE\nConfirmed Cases</string>
+    <string name="tableview_age_death_rate_AC">DEATH RATE\nAll Cases</string>
+
+    <string name="tableview_gender_gender">GENDER</string>
+    <string name="tableview_precon_precon">PRE-EXISTING\nCONDITION</string>
+
+    <string name="tableview_age_title">A statistics about the age groups of the deceased:</string>
+    <string name="tableview_gender_title">A statistics about the sex of the deceased:</string>
+    <string name="tableview_precon_title">A statistics about the previous diseases of the deceased:</string>
+
+
+    <!--tableview country-->
+    <string name="tableview_country_country">Country</string>
+    <string name="tableview_country_total_case">Total Cases</string>
+    <string name="tableview_country_New_Case">New Cases</string>
+    <string name="tableview_country_Total_Death">Total Deaths</string>
+    <string name="tableview_country_New_Death">New Deaths</string>
+    <string name="tableview_country_Active_Case">Active Cases</string>
+    <string name="tableview_country_Total_Recovered">Total Recovered</string>
+    <string name="tableview_country_Serious_Critical">Serious/Critical</string>
+    <string name="tableview_country_TopCases_1MPop">Tot.Cases/1M Pop.</string>
+    <string name="tableview_country_TopDeaths_1MPop">Tot.Deaths/1M Pop</string>
+    <string name="tableview_country_First_Case_Date">First Case Date</string>
+    <string name="tableview_country_Total_tests">Total Tests</string>
+    <string name="tableview_country_tottest_1mpop">Tot.Tests/1M Pop.</string>
+
+
+    <!--references links-->
+    <string name="link_who" translatable="false"><a href="https://www.who.int/">WHO-World Health Organization</a></string>
+    <string name="link_jhu" translatable="false"><a href="https://hub.jhu.edu/novel-coronavirus-information/">JHU-Johns Hopkins University</a></string>
+    <string name="link_cluster" translatable="false"><a href="https://ourworldindata.org/coronavirus-source-data">ourworldindata.org</a></string>
+    <string name="link_worldo" translatable="false"><a href="https://www.worldometers.info/coronavirus/">worldometers.info</a></string>
+    <string name="link_maps" translatable="false"><a href="https://clustrmaps.com/coronavirus/">clustrmaps.com</a></string>
+
+    <!--Admob unit ids-->
+    <string name="ad_unit_id_banner_test" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_unit_id_InterstitialAd_test" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_unit_id_real" translatable="false">ca-app-pub-4857677240863208/7181279732</string>
+    <string name="defaultCountry">Default Country</string>
+    <string name="world">World</string>
+    <string name="coronameter_main_page_top">CoronaMETER</string>
+    <string name="live_main_page_top">LIVE</string>
+    <string name="reports_main_page_top">" Reports"</string>
+
+</resources>
